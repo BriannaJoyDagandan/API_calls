@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixabay Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Pixabay Image Search</h1>
+        <input type="text" id="search-input" placeholder="Search photo" />
+        <button id="search-btn">Search</button>
+        <div id="image-grid" class="image-grid">
+        </div>
+        <div class="pagination">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="image-details">
+                <p><strong>Tags:</strong> <span id="modal-tags"></span></p>
+                <p><strong>Likes:</strong> <span id="modal-likes"></span></p>
+                <p><strong>Views:</strong> <span id="modal-views"></span></p>
+                <p><strong>Downloads:</strong> <span id="modal-downloads"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="json.js"></script>
+</body>
+</html>
